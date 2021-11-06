@@ -1,0 +1,42 @@
+{
+  "name": "10-years-of-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabaroa/10-years-of-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabaroa/10-years-of-css/issues"
+  },
+  "homepage": "https://github.com/nabaroa/10-years-of-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-insert": "^0.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-string-replace": "^1.1.2",
+    "nakds": "^1.20.7",
+    "postcss-apply": "^0.12.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^9.2.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.3",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

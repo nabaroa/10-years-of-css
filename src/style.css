@@ -1,0 +1,184 @@
+@import "../node_modules/nakds/dist/css/nakDS.min.css";
+
+/* Use logical values and properties instead and show rtl in demo. Also in nakDS */
+
+.nk-slider {
+  overflow: hidden;
+}
+
+.nk-slider__back {
+  background: yellow;
+  width: 100px;
+  height: 50vh;
+  right: 0;
+  top: 0;
+  left: initial;
+  opacity: 0.3;
+  z-index: 3;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nk-slider__next {
+  /* position: fixed; */
+  background: pink;
+  width: 100px;
+  height: 50vh;
+  right: 0;
+  bottom: 0;
+  left: initial;
+  opacity: 0.3;
+  z-index: 3;
+  /* visibility: hidden; */
+  &:hover {
+    opacity: 1;
+    /* visibility: visible; */
+  }
+}
+
+.nk-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.nk-bg--left {
+  object-position: left;
+}
+
+.ruler {
+  position: fixed;
+  /* transform: rotate(-90deg); */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* Counter */
+/* https://codepen.io/alexerlandsson/details/Kzabyr */
+/* It's not accesible */
+
+:root {
+  --timer-size: 50px;
+  --timer-border-radius: calc(var(--timer-size) / 10);
+}
+
+.counter {
+  font-family: monospace, sans-serif;
+  position: fixed;
+  top: 3%;
+  left: 6%;
+  color: #000;
+  overflow: hidden;
+
+  &:hover {
+    overflow: visible;
+  }
+}
+
+.timer {
+  height: var(--timer-size);
+  float: left;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+
+.timer-val-container {
+  float: left;
+  &.hours-tenth {
+    animation: count-10 360000s steps(10, end) infinite;
+  }
+  &.hours-single {
+    animation: count-10 36000s steps(10, end) infinite;
+  }
+  &.minutes-tenth {
+    animation: count-6 3600s steps(6, end) infinite;
+  }
+  &.minutes-single {
+    animation: count-10 600s steps(10, end) infinite;
+  }
+  &.seconds-tenth {
+    animation: count-6 60s steps(6, end) infinite;
+  }
+  &.seconds-single {
+    animation: count-10 10s steps(10, end) infinite;
+  }
+}
+
+.timer-val {
+  width: (var(--timer-size) / 2);
+  height: var(--timer-size);
+  text-align: center;
+  line-height: var(--timer-size);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* //Keyframes */
+
+@keyframes count-6 {
+  to {
+    transform: translateY(calc(var(--timer-size) * -6));
+  }
+}
+
+@keyframes count-10 {
+  to {
+    transform: translateY(calc(var(--timer-size) * -10));
+  }
+}
+
+.nk-progress {
+  position: fixed;
+  left: 0;
+  width: 8px;
+  height: 100vh;
+
+  & .nk-progress__bar {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 0;
+    background: red;
+    background: linear-gradient(#ff512f, #dd2476);
+    animation: progress 2400s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes progress {
+  to {
+    height: 100vh;
+  }
+}
+
+.pomodoro-color {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  animation: opacity 100s;
+  animation-fill-mode: forwards;
+}
+@keyframes opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+.show--custom-properties {
+  font-family: monospace, sans-serif;
+  position: fixed;
+  top: 200px;
+  left: 50px;
+  font-size: .8em;
+  transform: rotate(-9deg);
+  opacity: 0;
+  animation: opacity 1s 10s;
+  animation-fill-mode: forwards;
+}
