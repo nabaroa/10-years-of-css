@@ -13,7 +13,7 @@ function css() {
       postcss([
         cssImport(),
         postcssPresetEnv({
-          stage: 1,
+          stage: 3,
           features: {
             "nesting-rules": true,
           },

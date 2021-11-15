@@ -14,35 +14,265 @@
 <body>
   <main class="">
     <div class="nk-slider">
-      <header id="0" class="nk-slide">
-        <div class="nk-cover">
-          <img class="nk-bg nk-bg--left" src="assets/img/cover.png" alt="CSS. 10 años en 1 pomoodo">
-        </div>
-        <a class="nk-slider__next" href="#1">Next</a>
+      <header id="0" class="nk-slide bg-cover">
+        <img class="nk-bg-image nk-bg-image--left" src="assets/img/cover.png" alt="CSS. 10 años en 1 pomoodo">
+        <a class="nk-slider__next" href="#1a">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
       </header>
+      <!----------------------------------->
+      <article id="1a" class="nk-slide">
+        <img class="nk-avatar--large nk-card__image" src="assets/img/nk-avatar.jpeg" alt="Naiara Abaroa">
+        <a class="nk-slider__back" href="#0">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <h2 class="nk-heading--2">Naiara Abaroa</h2>
+        <p>Frontend designer en Wise</p>
+        <p>@nabaroa</p>
+        <a class="nk-slider__next" href="#1">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
       <!----------------------------------->
       <article id="1" class="nk-slide">
         <img class="ruler" src="assets/img/ruler.svg" alt="">
-        <div class="nk-slide nk-grid nk-grid-2">
-          <img class="nk-object-fit--cover" src="assets/img/lekitto.jpg" alt="">
-          <img class="nk-object-fit--cover" src="assets/img/london.jpg" alt="">
+        <div class="nk-slide ">
+          <div class="nk-grid nk-grid-2">
+            <img class="nk-object-fit--cover nk-filter--greyscale" src="assets/img/lekitto.jpg" alt="">
+            <img class="nk-object-fit--cover nk-filter--greyscale" src="assets/img/london.jpg" alt="">
+          </div>
         </div>
         Filters in hover? O que vayan cambiando poco a poco?
         La gente estaré buscando los siguiente huevos de pascua
-        <a class="nk-slider__back" href="#0">Back</a>
-        <a class="nk-slider__next" href="#2">Next</a>
+        <a class="nk-slider__back" href="#0">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#2">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
       </article>
       <!----------------------------------->
-      <article id="2" class="nk-slide">
+      <article id="2" class="nk-slide pomodoro">
         <!-- <div class="nk-cover">
           <h1 class="nk-cover__title">I am a <span class="nk-font--bold"> slide</span></h1>
         </div> -->
         <img src="assets/img/pomodoro.svg" width="300" alt="">
-        <img src="assets/img/red.svg" class="pomodoro-color" width="300" alt="">
-        Explicar que siempre voy mal de tiempo, así que me pongo el tiempo y el pomodoro
-        (Carl Sagan más tarde, cuando empiecen a aparecer las cosas)
-        Algunas slides se van a ir coloreando 
 
+        <img src="assets/img/pomodoro-shadow.svg" class="pomodoro-color pomodoro-color--shadow" width="300" alt="">
+        <img src="assets/img/pomodoro-red.svg" class="pomodoro-color pomodoro-color--red" width="300" alt="">
+        <!-- <img src="assets/img/pomodoro-bg.svg" class="pomodoro-color pomodoro-color--bg" width="300" alt=""> -->
+        <!-- <img src="assets/img/red.svg" class="pomodoro-color" width="300" alt=""> -->
+        <!-- <div class="nk-slide__container">
+          Explicar que siempre voy mal de tiempo, así que me pongo el tiempo y el pomodoro
+          (Carl Sagan más tarde, cuando empiecen a aparecer las cosas)
+          Algunas slides se van a ir coloreando
+        </div> -->
+
+
+        <a class="nk-slider__back" href="#1">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#2-1">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="2-1" class="nk-slide">
+        <h1 class="nk-heading--1">25 años de CSS</h1>
+        <img src="assets/img/timeline.svg" alt="Timeline">
+
+
+        <a class="nk-slider__back" href="#2">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#3">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="3" class="nk-slide">
+
+        <img src="assets/img/tumbleweed.svg" width="300" alt="">
+        Primeros 15 años. Cri, cri. (sonido) la bola del desierto
+        Últimos 10. Pirámides? Algo bullicioso. New york en hora punta. Con sonido
+
+
+        <a class="nk-slider__back" href="#2">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#3a">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="3a" class="nk-slide">
+
+        <video autoplay width="100%" height="100%" controls class="nk-object-fit--cover">
+          <source src="assets/video/tokio.webm" type="video/mp4">
+
+        </video>
+
+        <a class="nk-slider__back" href="#3">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="4" class="nk-slide">
+        <div class="nk-slide__container">
+          <h2>Hitos en la historia</h2>
+          <ul>
+            <li>HTML5 (animaciones, border radius, filters (instagram), show examples. Buscar en apuntes del postgrado)
+            </li>
+            <li>Preprocesadores</li>
+            <li>Custom properties</li>
+            <li>Postcss</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Logical properties</li>
+            <li>nesting nativo. Enseñar código</li>
+          </ul>
+          <div class="show--custom-properties">
+            Custom properties
+          </div>
+          <p> Cuando empiecen a aparece los hitos, cambiar de regla con un click y meter años.</p>
+          ----------------
+          Pasado / Presente / Futuro
+
+        </div>
+        <a class="nk-slider__back" href="#3">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#5">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="5" class="nk-slide">
+        Bloques de tiempo:
+        -Primeros 15 años: color, background, fonts, float,
+        -Hace 10 años CSS3: animaciones, border radius, tambien, cosas guatxis como filters
+        - Empezamos con los preprocesadores en 2012?
+        - Y vino el goteo de movidas guays en nativo. -> Postcss
+        - algo más tarde vino flexbox y grid
+        - Qué es lo fancy ahora? Logical properies. Enseñar con demo
+        - Mirar el survey
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="6" class="nk-slide">
+        Demo.
+        Show slides:
+        <ul>
+          <li>slides with grid y scroll-behaviour</li>
+          <li>rtl</li>
+          <li>the timer</li>
+          <li>the nesting</li>
+          <li>CSS standar with no postcss</li>
+          <li>Sin JS. Ah! Sí, sí hay algo de JS. Zorionak Bilbostack</li>
+        </ul>
+        <a class="nk-slider__back" href="#5">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#7">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="7" class="nk-slide">
+        Ristra de herramientas que hemos aprendido:
+        <ul>
+          <li>sass, less, stylus, compass, prepros, postcss, grunt, gulp, webpack</li>
+          <li>bem, mobile first,</li>
+        </ul>
+        <a class="nk-slider__back" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#8">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="8" class="nk-slide">
+        Ir añadiendo hitos en el timeline con sonido y todo.
+        Explicar esto en el pomodoro del inicio o dejar que sorprenda?
+        SORPRENDER
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="9" class="nk-slide">
+        <div class="nk-shape--heart nk-bg--c"></div>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="10" class="nk-slide">
+        <div class="nk-shape--heart nk-bg--c"></div>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="11" class="nk-slide">
+        <div class="nk-shape--heart nk-bg--c"></div>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="12" class="nk-slide">
+        <div class="nk-shape--heart nk-bg--c"></div>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="13" class="nk-slide">
+        <div class="nk-shape--heart nk-bg--c"></div>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="14" class="nk-slide">
+        <a href="https://drafts.csswg.org/css-logical/">https://drafts.csswg.org/css-logical/</a>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="15" class="nk-slide">
         <div class="counter">
           <div class="timer">
             <div class="timer-val-container hours-tenth">
@@ -118,119 +348,13 @@
         <div class="nk-progress">
           <div class="nk-progress__bar"></div>
         </div>
-
-
-        <a class="nk-slider__back" href="#1">Back</a>
-        <a class="nk-slider__next" href="#3">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="3" class="nk-slide">
-        <h2>Hitos en la historia</h2>
-        <ul>
-          <li>HTML5 (animaciones, border radius, filters (instagram), show examples. Buscar en apuntes del postgrado)</li>
-          <li>Preprocesadores</li>
-          <li>Custom properties</li>
-          <li>Postcss</li>
-          <li>Flexbox</li>
-          <li>Grid</li>
-          <li>Logical properties</li>
-          <li>nesting nativo. Enseñar código</li>
-        </ul>
-        <div class="show--custom-properties">
-          Custom properties
-        </div>
-        Cuando empiecen a aparece los hitos, cambiar de regla con un click y meter años.
-        <a class="nk-slider__back" href="#2">Back</a>
-        <a class="nk-slider__next" href="#4">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="4" class="nk-slide">
-        <div class="nk-cover nk-cover--dark">
-          Pasado / Presente / Futuro
-          <button class="nk-button nk-button--color nk-mtx">Try now</button>
-        </div>
-        <a class="nk-slider__back" href="#3">Back</a>
-        <a class="nk-slider__next" href="#5">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="5" class="nk-slide">
-        <img src="assets/img/tumbleweed.svg" width="300" alt="">
-        Primeros 15 años. Cri, cri. (sonido) la bola del desierto
-        Últimos 10. Pirámides? Algo bullicioso. New york en hora punta. Con sonido
         <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="6" class="nk-slide">
-        Demo.
-        Show slides:
-        - slides with grid y scroll-behaviour
-        - rtl
-        - the timer
-        - the nesting 
-        - CSS standar with no postcss
-        - Sin JS. Ah! Sí, sí hay algo de JS. Zorionak Bilbostack
-        <a class="nk-slider__back" href="#5">Back</a>
-        <a class="nk-slider__next" href="#7">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="7" class="nk-slide">
-        Ristra de herramientas que hemos aprendido:
-        - sass, less, stylus, compass, prepros, postcss, grunt, gulp, webpack
-        -bem, mobile first, 
-        <a class="nk-slider__back" href="#6">Back</a>
-        <a class="nk-slider__next" href="#8">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="8" class="nk-slide">
-        Ir añadiendo hitos en el timeline con sonido y todo.
-        Explicar esto en el pomodoro del inicio o dejar que sorprenda?
-        SORPRENDER
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="9" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="10" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="11" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="12" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="13" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="14" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
-      </article>
-      <!----------------------------------->
-      <article id="15" class="nk-slide">
-        <div class="nk-shape--heart nk-bg--c"></div>
-        <a class="nk-slider__back" href="#4">Back</a>
-        <a class="nk-slider__next" href="#6">Next</a>
+        <a class="nk-slider__back" href="#4">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#6">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
       </article>
     </div>
     </article>
