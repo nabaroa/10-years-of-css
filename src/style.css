@@ -1,5 +1,9 @@
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
 
+:root {
+  --color: #e84d7a;
+}
+
 /* Use logical values and properties instead and show rtl in demo. Also in nakDS */
 
 .nk-slider {
@@ -18,8 +22,8 @@
 
 .nk-slide__container {
   width: 800px;
-  margin: auto;
 }
+
 .nk-slider__back {
   display: flex;
   align-items: flex-end;
@@ -72,6 +76,10 @@
   object-position: left;
 }
 
+.nk-heading--1{
+  margin-bottom: var(--xxxx-large);
+}
+
 /* grid */
 
 .nk-grid-2 {
@@ -122,6 +130,7 @@
 
   &:hover {
     overflow: visible;
+    outline: 3px solid var(--color);
   }
 }
 
@@ -233,15 +242,28 @@
   }
 }
 
-.show--custom-properties {
+.show {
   font-family: monospace, sans-serif;
   position: fixed;
-  top: 200px;
-  left: 50px;
+  top: 0;
+  left: 50vw;
   font-size: 0.8em;
-  transform: rotate(-9deg);
+  transform: rotate(-45deg);
+  transform-origin: bottom right;
   opacity: 0;
   animation: opacity 1s 10s;
+  animation-fill-mode: forwards;
+  text-align: end;
+}
+
+.show--custom-properties {
+  animation: opacity 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+.show--postcss {
+  left: 60vw;
+  animation: opacity 1s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -261,3 +283,24 @@
 .arrow-next {
   transform: rotate(180deg);
 }
+
+.nk-filter--greyscale {
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.cp_embed_wrapper {
+  width: 100vw;
+  height: 50vh;
+  & iframe {
+    height: 100%;
+  }
+}
+
+.notes {
+  position: absolute;
+  bottom: 2em;
+  color: red;
+}
+
