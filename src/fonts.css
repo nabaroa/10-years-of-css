@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "readex";
+  src: url("../assets/fonts/ReadexPro[wght].ttf");
+  font-variation-settings: "wght" 400;
+}
+
+:root {
+  --base-font: "readex", sans-serif;
+}
+
+/*Font variables*/
+
+.font-variation-100,
+.light {
+  font-variation-settings: "wght" 100;
+}
+
+.font-variation-400 {
+  font-variation-settings: "wght" 400;
+}
+
+/*TODO: migrate font variations to nakDS*/
+
+[class^="nk-heading"] {
+  font-variation-settings: "wght" 300;
+}
+
+.font-variation-800,
+.bold {
+  font-variation-settings: "wght" 800;
+}

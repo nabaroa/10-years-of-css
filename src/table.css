@@ -1,0 +1,9 @@
+.layout-table-example {
+  border: 1px dashed var(--color--k-5);
+  margin: 80px;
+  & td,
+  & th {
+    border: 1px dashed var(--color--k-5);
+    background-size: contain;
+  }
+}

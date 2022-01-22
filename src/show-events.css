@@ -1,0 +1,77 @@
+/* Triggers */
+
+.nk-slide:hover {
+  & .show-calendar-start {
+    animation: opacity 1s 1s;
+    animation-fill-mode: forwards;
+    &.stay {
+      opacity: 1;
+    }
+  }
+
+  & .show-calendar-end {
+    animation: opacity 1s 1s;
+    animation-fill-mode: forwards;
+    &.stay {
+      opacity: 1;
+    }
+  }
+
+  & .show--responsive {
+    animation: opacity 1s 3s;
+    animation-fill-mode: forwards;
+    &.stay {
+      opacity: 1;
+    }
+  }
+}
+
+.show {
+  font-family: monospace, sans-serif;
+  position: fixed;
+  z-index: 2;
+  top: 5vh;
+  left: 50vw;
+  font-size: 0.8em;
+  transform: rotate(-90deg);
+  opacity: 0;
+  /* animation-fill-mode: forwards; */
+  text-align: end;
+  color: var(--color--k-1);
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: var(--color--k-1);
+  }
+}
+
+.show-calendar-start {
+  top: 2vh;
+  left: 0;
+  animation-fill-mode: forwards;
+}
+
+.show-calendar-end {
+  left: initial;
+  top: 2vh;
+  right: 0;
+}
+
+.show--responsive {
+  left: 50vw;
+}
+
+.show--custom-properties {
+  animation: opacity 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+.show--postcss {
+  left: 60vw;
+  animation: opacity 1s 3s;
+  animation-fill-mode: forwards;
+}

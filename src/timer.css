@@ -1,0 +1,81 @@
+/* Counter */
+/* https://codepen.io/alexerlandsson/details/Kzabyr */
+/* It's not accesible */
+
+:root {
+  --timer-size: 50px;
+  --timer-border-radius: calc(var(--timer-size) / 10);
+}
+
+.counter {
+  font-family: monospace, sans-serif;
+  position: fixed;
+  top: 3%;
+  left: 6%;
+  color: var(--color--k-1);
+  overflow: hidden;
+
+  ---color--k-1
+
+  &:hover {
+    overflow: visible;
+    outline: 3px solid var(--color);
+  }
+}
+
+.timer {
+  height: var(--timer-size);
+  float: left;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+
+.timer-val-container {
+  float: left;
+
+  &.hours-tenth {
+    animation: count-10 360000s steps(10, end) infinite;
+  }
+
+  &.hours-single {
+    animation: count-10 36000s steps(10, end) infinite;
+  }
+
+  &.minutes-tenth {
+    animation: count-6 3600s steps(6, end) infinite;
+  }
+
+  &.minutes-single {
+    animation: count-10 600s steps(10, end) infinite;
+  }
+
+  &.seconds-tenth {
+    animation: count-6 60s steps(6, end) infinite;
+  }
+  
+  &.seconds-single {
+    animation: count-10 10s steps(10, end) infinite;
+  }
+}
+
+.timer-val {
+  width: (var(--timer-size) / 2);
+  height: var(--timer-size);
+  text-align: center;
+  line-height: var(--timer-size);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* //Keyframes */
+
+@keyframes count-6 {
+  to {
+    transform: translateY(calc(var(--timer-size) * -6));
+  }
+}
+
+@keyframes count-10 {
+  to {
+    transform: translateY(calc(var(--timer-size) * -10));
+  }
+}

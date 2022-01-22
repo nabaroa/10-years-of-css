@@ -1,0 +1,50 @@
+.bounce {
+  position: absolute;
+  width: 100vw;
+}
+
+@keyframes bounce {
+  40%,
+  70%,
+  90% {
+    bottom: 0;
+    animation-timing-function: ease-out;
+  }
+
+  0% {
+    bottom: 110vh;
+    left: 0;
+    animation-timing-function: ease-in;
+  }
+
+  55% {
+    bottom: 40vh;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    bottom: 25vh;
+    left: 25vw;
+    animation-timing-function: ease-in;
+  }
+
+  95% {
+    bottom: 10vh;
+    left: 40vw;
+    animation-timing-function: ease-in;
+  }
+
+  95% {
+    bottom: 0;
+    left: 50vw;
+    animation-timing-function: ease-in;
+    opacity: .8;
+  }
+  
+  100% {
+    left: 100vw;
+    bottom: 0;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}

@@ -15,7 +15,11 @@
   <main class="">
     <div class="nk-slider">
       <header id="0" class="nk-slide bg-cover">
-        <img class="nk-bg-image nk-bg-image--left" src="assets/img/cover.png" alt="CSS. 10 años en 1 pomoodo">
+        <picture>
+          <source srcset="assets/img/cover-mobile.jpg" media="(max-width: 500px)">
+          <img class="nk-bg-image nk-object-fit--cover nk-bg-image--right--sm" src="assets/img/cover-hero.jpg"
+            alt="CSS. 10 años">
+        </picture>
         <a class="nk-slider__next" href="#1">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
@@ -24,12 +28,15 @@
       <!----------------------------------->
       <article id="1" class="nk-slide">
 
-        <h2 class="nk-heading--1">Naiara Abaroa</h2>
-        <img class="nk-avatar--large nk-card__image nk-mbx" src="assets/img/nk-avatar.jpeg" alt="Naiara Abaroa">
 
+        <img class="nk-avatar--large nk-card__image nk-filter--greyscale nk-mbx" src="assets/img/nabaroa--.jpg"
+          alt="Naiara Abaroa">
+        <h2 class="nk-heading--1 nk-mbn">Naiara Abaroa</h2>
+        <a href="https://twitter.com/nabaroa">@nabaroa</a>
         <p class="nk-mtx nk-flex nk-flex--column">Frontend designer en <img
-            src="https://wise.com/public-resources/assets/logos/wise/brand_logo.svg" alt="Wise"></p>
-        <p>@nabaroa</p>
+            src="https://wise.com/public-resources/assets/logos/wise/brand_logo.svg" class="nk-filter--greyscale"
+            alt="Wise"></p>
+
 
         <a class="nk-slider__back" href="#0">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
@@ -56,7 +63,10 @@
         </a>
       </article>
       <!----------------------------------->
-      <article id="3" class="nk-slide pomodoro">
+      <article id="3" class="nk-slide pomodoro nk-cover">
+        <h1 class="nk-cover__title">👧 👩 👱‍♀️</h1>
+
+        
 
         <img src="assets/img/pomodoro.svg" width="300" alt="">
         <img src="assets/img/pomodoro-shadow.svg" class="pomodoro-color pomodoro-color--shadow" width="300" alt="">
@@ -209,7 +219,7 @@
       <!----------------------------------->
       <article id="4" class="nk-slide">
 
-        <h1 class="nk-cover__title nk-mbl">25 años de CSS</h1>
+        <h1 class="nk-cover__title nk-mbl"><span class="bold">26 años</span> de CSS</h1>
         <svg width="1146" height="301" class="nk-mtl" viewBox="0 0 1146 301" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M74 187L1010 187" stroke="#9D9D9C" stroke-miterlimit="10" />
@@ -292,9 +302,16 @@
         </a>
       </article>
       <!----------------------------------->
-      <article id="5" class="nk-slide">
+      <article id="5" class="nk-slide nk-cover">
 
-        <img src="assets/img/tumbleweed.svg" width="300" alt="">
+        <!-- <img src="assets/img/tumbleweed.svg" width="300" alt=""> -->
+        👧 
+
+        <h1 class="nk-cover__title">⏳</h1>
+        🧶 
+
+
+
         <audio controls src="assets/video/grillos.mp3">
           Your browser does not support the
           <code>audio</code> element.
@@ -320,7 +337,8 @@
               <div class="nk-pal" style="border: 1px solid var(--color)">Border</div>
             </div>
             <img src="assets/img/the-box.svg" alt="">
-            display: inline & block
+            display: none / inline / block
+            position: relative / absolute
             <!-- <div class="nk-pal" style="border: 1px solid var(--color)">Layout con tablas</div> -->
             <!-- <div class="nk-pal">Layout: Float de cuándo es? tables / Position / Display inline & block</div> -->
           </div>
@@ -528,8 +546,8 @@
       <!----------------------------------->
       <article id="13" class="nk-slide">
 
-        <div class="nk-slide__padding">
-          <h1 class="nk-heading--1 nk-flex--column nk-flex">Las cosas molonas las hacíamos con <span
+        <div class="nk-slide__container ">
+          <h1 class="nk-heading--2 nk-flex--column nk-flex">Las cosas molonas las hacíamos con <span
               class="nk-cover__title bold typewriter">
               Flash.</span></h1>
         </div>
@@ -547,6 +565,10 @@
         <div class="nk-slide__container">
           <h1 class="nk-heading--1">Pero... <span class="nk-cover__title bold"> 💀</span< /h1>
         </div>
+        <div class="notes">
+          ciclo de la vida
+        </div>
+
         <a class="nk-slider__back" href="#13">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
@@ -571,11 +593,26 @@
       <!----------------------------------->
       <article id="16" class="nk-slide">
 
+        La última década
+        <a class="nk-slider__back" href="#15">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#16-2">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <!----------------------------------->
+      <article id="16-2" class="nk-slide">
+        <h1 class="">
+          La última <span class="bold"> década</span>
+        </h1>
+
         <video autoplay width="100%" height="100%" controls class="nk-object-fit--cover">
           <source src="assets/video/tokio.webm" type="video/mp4">
         </video>
 
-        <a class="nk-slider__back" href="#15">
+        <a class="nk-slider__back" href="#16">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
         <a class="nk-slider__next" href="#17">
@@ -589,7 +626,7 @@
 
         <h1 class="nk-heading--1"><span class="nk-cover__title bold rgb">esto</span></h1>
 
-        <a class="nk-slider__back" href="#16">
+        <a class="nk-slider__back" href="#16-2">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
         <a class="nk-slider__next" href="#18">
@@ -623,7 +660,8 @@
       <!----------------------------------->
       <article id="20" class="nk-slide">
 
-        <h1 class="nk-heading--1 box-shadow"><span class="nk-cover__title bold">y esto</span></h1>
+        <h1 class="nk-heading--1 box-shadow nk-bg--k-1 nk-size--1-of-1"><span class="nk-cover__title bold nk-pax">y
+            esto</span></h1>
 
         <a class="nk-slider__back" href="#19">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
@@ -772,7 +810,8 @@
           </div>
         </div>
 
-        <h1 class="nk-heading--1 fixed"><span class="nk-cover__title bold nk-color--k-10">y esto</span></h1>
+        <h1 class="nk-cover__title fixed translate-y-vertical"><span class="nk-cover__title bold nk-color--k-10">y
+            esto</span></h1>
 
 
 
@@ -784,8 +823,8 @@
         </a>
       </article>
       <!----------------------------------->
-      <article id="25" class="nk-slide">
-        <h1 class="nk-heading--1 bounce"><span class="nk-cover__title bold">y esto</span></h1>
+      <article id="25" class="nk-slide gradient-2">
+        <h1 class="nk-cover__title bounce"><span class="nk-heading--1 bold nk-color--k-10">y esto</span></h1>
 
         <a class="nk-slider__back" href="#24">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
@@ -795,12 +834,16 @@
         </a>
       </article>
       <!----------------------------------->
-      <article id="26" class="nk-slide">
+      <article id="26" class="nk-slide nk-cover">
 
-        <div class=" nk-slide__container">
+
+        <div class=" nk-slide__padding">
+         
           <h1 class="nk-heading--1">Con<span class="nk-heading--1 bold"> 1 línea</span> de código</h1>
         </div>
-
+        <div class="line"></div>
+       
+        
         <a class="nk-slider__back" href="#25">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
@@ -809,10 +852,10 @@
         </a>
       </article>
       <!----------------------------------->
-      <article id="27" class="nk-slide gradient-2">
+      <article id="27" class="nk-slide nk-cover">
 
-        <h1 class="nk-heading--1 electricity"><span class="nk-heading--1 bold nk-color--k-10 text-border"> Y
-            pecamos</span></h1>
+        <h1 class="nk-cover__title"><span class="nk-heading--1">
+        </span> 🎉</h1>
 
         <a class="nk-slider__back" href="#26">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
@@ -825,7 +868,7 @@
       <article id="28" class="nk-slide">
 
         <div class="nk-slide__container">
-          <h1 class="nk-heading--1">Y los efectos fancy <span class="nk-heading--3 bold"> pasaron de moda 😞</span></h1>
+          <h1 class="nk-heading--1">Los efectos fancy <span class="nk-heading--3 bold"> pasaron de moda 😞</span></h1>
         </div>
 
         <a class="nk-slider__back" href="#27">
@@ -859,11 +902,22 @@
           <h1 class="nk-heading--1">Y el <span class="nk-heading--3 bold"> Responsive Design
               ✨ </span></h1>
         </div>
+        <button class="button" id="addCalendar">
+          <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M29.8961 1.92046C27.6664 8.91552 28.0209 16.1277 28.5889 23.3579C29.1398 30.3788 31.2317 40.3576 26.9186 46.5126C25.9365 47.9141 30.8209 51.3976 31.7856 50.0206C35.5327 44.6747 34.4876 36.8773 34.024 30.7351C33.3893 22.3461 32.1563 13.6128 34.7645 5.42866C35.3612 3.55168 30.2767 0.724491 29.8961 1.92046Z"
+              fill="var(--color--k-10)" />
+            <path
+              d="M50.9932 25.0035C42.8556 24.9452 34.8461 23.3703 26.7305 22.9609C18.3342 22.5379 9.9576 24.6209 1.84885 26.5434C3.37382 27.7875 4.89815 29.0308 6.42311 30.2748C6.56048 30.0905 6.69694 29.9081 6.83431 29.7237C7.94767 28.2332 3.10059 24.6973 1.96671 26.2149C1.82934 26.3993 1.69288 26.5816 1.55551 26.766C0.296601 28.4515 4.83052 30.8064 6.12977 30.4974C14.0593 28.6179 21.9601 26.8613 30.1509 27.075C38.2786 27.2873 46.2667 29.0591 54.4137 29.1163C56.7849 29.1355 52.6963 25.0155 50.9932 25.0035Z"
+              fill="var(--color--k-10)" />
+          </svg>
+        </button>
 
         <div class="show show--responsive">
           Responsive <br> design
         </div>
-
+        <span class="show show-calendar-start">1996</span>
+        <span class="show show-calendar-end">2022</span>
 
         <a class="nk-slider__back" href="#29">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
@@ -874,121 +928,538 @@
       </article>
       </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="31" class="nk-slide nk-cover">
+
+        <h1 class="nk-cover__title"> Qué <span class="bold"> más</span>? </h1>
+
+        <div class="notes">vamos a repasar algunos puntos clave</div>
+        <a class="nk-slider__back" href="#30">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#32">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      </article>
+      <!----------------------------------->
+      <article id="32" class="nk-slide nk-bg--c nk-cover">
+
+        <!-- <div class="show stay show--responsive">
+          Responsive <br> design
+        </div> -->
+
+        <h1 class="nk-cover__title">Layout</h1>
+        <h2 class="nk-heading--1">flexbox - grid </h2>
+
+        
+        <span class="show stay show-calendar-start">1996</span>
+        <span class="show stay show-calendar-end">2022</span>
+
+        <a class="nk-slider__back" href="#31">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#33">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      </article>
+      <!----------------------------------->
+      <article id="33" class="nk-slide">
+
+        <h1 class="nk-heading--1 nk-mtx">Gap in flexbox</h1>
+        <p class="codepen" data-height="400" data-theme-id="39960" data-default-tab="html,result"
+          data-slug-hash="gOgyjyy" data-editable="true" data-user="nabaroa"
+          style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nabaroa/pen/gOgyjyy">
+              Gap in flexbox</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <!-- <a class="text-center" href="https://css-tricks.com/almanac/properties/g/gap/">More info about gap</a> -->
+
+
+        <a class="nk-slider__back" href="#32">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#34">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      </article>
+      <!----------------------------------->
+      <article id="34" class="nk-slide">
+
+
+        <h1 class="nk-heading--1 nk-mtx">smooth-scrolling</h1>
+        <!-- <a target="_blank" class="icon-source" href="https://www.w3.org/TR/css-scroll-snap-1/">w3c
+        </a> -->
+        <p class="codepen" data-height="300" data-theme-id="39960" data-default-tab="html,result"
+          data-slug-hash="xejLoa" data-editable="true" data-user="nabaroa"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nabaroa/pen/xejLoa">
+              Only CSS smooth scroll</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+
+
+        <a class="nk-slider__back" href="#33">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#35">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      </article>
+      <!----------------------------------->
+      <article id="35" class="nk-slide">
+
+        <h1 class="nk-heading--1 nk-mtx">:is & :where</h1>
+        https://developer.mozilla.org/en-US/docs/Web/CSS/:where#forgiving_selector_parsing
+        <p class="codepen" data-height="300" data-theme-id="39960" data-default-tab="html,result"
+          data-slug-hash="mdmVwKe" data-editable="true" data-user="nabaroa"
+          style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nabaroa/pen/mdmVwKe">
+              Untitled</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+
+
+        <a class="nk-slider__back" href="#34">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#36">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      </article>
+      <!----------------------------------->
+      <article id="36" class="nk-slide nk-cover">
+
+        <h1 class="nk-cover__title"><span class="bold">Font</span> variables 📝</h1>
         
 
-        <a class="nk-slider__back" href="#29">
+
+        <a class="nk-slider__back" href="#35">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#37">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
       </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="37" class="nk-slide nk-cover">
+
+        <h1 class="nk-cover__title"><span class="bold">Logical</span> properties and values 👈🏿 👉🏿</h1>
+
+        <a href="https://www.w3.org/TR/css-logical-1/">https://drafts.csswg.org/css-logical/</a>
 
 
-        <a class="nk-slider__back" href="#29">
+        <a class="nk-slider__back" href="#36">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#38">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
       </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="38" class="nk-slide nk-cover">
 
+        <h1 class="nk-cover__title"><span class="nk-heading--4"><span class="">2022</span> 💣</span></h1>
 
-        <a class="nk-slider__back" href="#29">
+        <a class="nk-slider__back" href="#37">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#39">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
       </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="39" class="nk-slide nk-cover nk-bg--m">
 
+        <!-- <span class="nk-cover__title">🚩</span> -->
+        <h1 class="nk-cover__title">Cascade <span class="bold"> layers </span> <span class="nk-d-block">🥞</span></h1>
 
-        <a class="nk-slider__back" href="#29">
+        
+        <div class="notes">
+        Enable flag and show.
+        Add a badge in the slides to show that the flag is on.
+        Show how to enable a flag.
+        https://www.w3.org/TR/css-cascade-5/
+
+        https://caniuse.com/css-cascade-layers </div>
+
+        <a class="nk-slider__back" href="#38">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#39-2">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+   
+      <!----------------------------------->
+      <article id="39-2" class="nk-slide">
+
+        <!-- <h1 class="nk-heading--1">  @layer</h1> -->
+        <!-- <img class="nk-avatar--large" src="https://pbs.twimg.com/profile_images/1433687120204337152/w4S8YTx__400x400.jpg" alt="">
+        <a href="https://twitter.com/TerribleMia">@TerribleMia</a> -->
+
+          <img src="assets/img/layers.svg" alt="">
+        <div class="notes">
+        </div>
 
 
-        <a class="nk-slider__back" href="#29">
+        <a class="nk-slider__back" href="#39">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#39-21">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <!----------------------------------->
+      <article id="39-21" class="nk-slide">
+
+        <h1 class="nk-heading--1 nk-mtx">@layer</h1>
+        <!-- <img class="nk-avatar--large" src="https://pbs.twimg.com/profile_images/1433687120204337152/w4S8YTx__400x400.jpg" alt="">
+        <a href="https://twitter.com/TerribleMia">@TerribleMia</a> -->
 
 
-        <a class="nk-slider__back" href="#29">
+        <div class="notes">
+        </div>
+
+        <p class="codepen" data-height="300" data-theme-id="39960" data-default-tab="html,result" data-slug-hash="xxXvgjv" data-editable="true" data-user="nabaroa" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nabaroa/pen/xxXvgjv">
+          Cascade layers</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+
+        <a class="nk-slider__back" href="#39-2">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#39-22">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <!----------------------------------->
+      <article id="39-22" class="nk-slide">
+
+        <h1 class="nk-heading--1 nk-mtx">@layer</h1>
+        <!-- <img class="nk-avatar--large" src="https://pbs.twimg.com/profile_images/1433687120204337152/w4S8YTx__400x400.jpg" alt="">
+        <a href="https://twitter.com/TerribleMia">@TerribleMia</a> -->
 
 
-        <a class="nk-slider__back" href="#29">
+        <div class="notes">
+        </div>
+
+        <p class="codepen" data-height="300" data-theme-id="39960" data-default-tab="html,result" data-slug-hash="XWevpow" data-editable="true" data-user="nabaroa" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/nabaroa/pen/xxXvgjv">
+          Cascade layers</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+
+        <a class="nk-slider__back" href="#39-21">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#39-3">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+
+         <!----------------------------------->
+         <article id="39-3" class="nk-slide nk-cover">
+
+          <h1 class="nk-heading--1">Usage:</h1>
+          <!-- <img class="nk-avatar--large" src="https://pbs.twimg.com/profile_images/1433687120204337152/w4S8YTx__400x400.jpg" alt="">
+          <a href="https://twitter.com/TerribleMia">@TerribleMia</a> -->
+  
+          <div class="nk-slide__container nk-text-align--left">
+            <ul class="nk-heading--4">
+              <li>Layer everything, so priority levels are really clear. Maybe allow unlayered CSS for super powerful overrides only, but ideally even do that as a high-level layer.</li>
+              <li>Resets as the lowest layer.</li>
+              <li>Third-party stuff as the middle layer(s).</li>
+              <li>Anything team-authored as the highest layer.</li>
+            </ul>
+          </div>
 
 
-        <a class="nk-slider__back" href="#29">
+          <div class="notes">
+          </div>
+  
+        
+          <a class="nk-slider__back" href="#39-2">
+            <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+          </a>
+          <a class="nk-slider__next" href="#40">
+            <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+          </a>
+        </article>
+        <!----------------------------------->
+      <article id="40" class="nk-slide nk-bg--c nk-cover">
+
+        <h1 class="nk-cover__title nk-mbx"><span class="bold">Container</span> Queries <span class="nk-d-block"> 📦
+        </span>        </h1>
+
+        <div class="notes">
+        What is the status of this?
+        Flag in chrome
+        <a href="chrome://flags/">chrome://flags/</a>
+      </div>
+
+
+        <a class="nk-slider__back" href="#39-2">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#41">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="41" class="nk-slide nk-bg--c nk-cover calendar">
+        <h1 class="nk-cover__title">
+         <span class="bold">Color</span> fuctions 🎨
+        </h1>
 
+        https://www.bram.us/2021/12/27/css-in-2022/?utm_source=CSS-Weekly&utm_campaign=Issue-488&utm_medium=email#the-hotlist--color-functions
 
-        <a class="nk-slider__back" href="#29">
+        <a class="nk-slider__back" href="#40">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#42">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
-      </article>
+
+
       <!----------------------------------->
-      <article id="30" class="nk-slide nk-bg--c">
+      <article id="42" class="nk-slide nk-bg--c nk-cover">
+<h1 class="nk-cover__title"><span class="bold">Accent</span> Color 🖍</h1>
+        
+        https://www.bram.us/2021/12/27/css-in-2022/?utm_source=CSS-Weekly&utm_campaign=Issue-488&utm_medium=email#the-hotlist--accent-color
 
-
-        <a class="nk-slider__back" href="#29">
+        <a class="nk-slider__back" href="#41">
           <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
         </a>
-        <a class="nk-slider__next" href="#31">
+        <a class="nk-slider__next" href="#43">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="43" class="nk-slide nk-bg--m nk-cover">
+        <h1 class="nk-cover__title"><span class="bold">:has</span>👩‍👧</h1>
+        :has
+        https://www.bram.us/2021/12/27/css-in-2022/?utm_source=CSS-Weekly&utm_campaign=Issue-488&utm_medium=email#the-hotlist--has
+
+
+        <a class="nk-slider__back" href="#42">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#44">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="44" class="nk-slide nk-bg--m nk-cover">
+        <h1 class="nk-cover__title"><span class="bold">Subgrid</span> 🏢</h1>
+        
+        https://www.bram.us/2021/12/27/css-in-2022/?utm_source=CSS-Weekly&utm_campaign=Issue-488&utm_medium=email#the-hotlist--subgrid
+
+        <a class="nk-slider__back" href="#43">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#45">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="45" class="nk-slide nk-bg--m nk-cover">
+        <h1 class="nk-cover__title"><span class="bold">New units</span> 📱</h1>
+        
+
+        https://www.bram.us/2021/12/27/css-in-2022/?utm_source=CSS-Weekly&utm_campaign=Issue-488&utm_medium=email#the-hotlist--viewport-units
+
+
+
+        <a class="nk-slider__back" href="#44">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#46">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="46" class="nk-slide nk-bg--c calendar">
+
+        <h1 class="nk-cover__title">Futuro 🔮</h1>
+
+        <a class="nk-slider__back" href="#45">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#47">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="47" class="nk-slide nk-bg--m nk-cover">
+
+        <h1 class="nk-cover__title"><span class="bold">Nesting</span> 🐣</h1>
+        
+        @scope
+        @when / @else
+
+
+        <a class="nk-slider__back" href="#46">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#48">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="48" class="nk-slide nk-bg--c calendar">
+
+        Demo.
+        Show slides:
+        <ul>
+          <li>slides with flex y scroll-behaviour</li>
+          <li>rtl</li>
+          <li>the timer</li>
+          <li>the nesting</li>
+          <li>CSS standar with no postcss</li>
+        </ul>
+
+
+
+        <a class="nk-slider__back" href="#47">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#49">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="49" class="nk-slide nk-bg--c calendar">
+
+        Ristra de herramientas que hemos aprendido:
+        <ul>
+          <li>sass, less, stylus, compass, prepros, postcss, grunt, gulp, webpack</li>
+          <li>bem, mobile first,</li>
+        </ul>
+
+        <a class="nk-slider__back" href="#48">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#50">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="50" class="nk-slide nk-bg--c calendar">
+
+        Conclusión final
+
+        <a class="nk-slider__back" href="#49">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#51">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="51" class="nk-slide nk-bg--c calendar">
+
+        Credits
+
+        gradient: https://codepen.io/bennettfeely/pen/jOEjmXK
+        https://codepen.io/yoksel/pen/DiIBm
+
+        https://css-tricks.com/cascade-layers/
+
+        <a class="nk-slider__back" href="#50">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#52">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="52" class="nk-slide nk-bg--c calendar">
+
+        <div>
+          <p class="nk-text--small nk-text-align--left">Builted with ❤ by <a href="https://github.com/nabaroa"> Naiara
+              Abaroa</a></p>
+        </div>
+        <div>
+          <a href="https://github.com/nabaroa/nak-scaffold">
+            <svg class="nk-icon" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M45.673 11.367c2.807-2.021 1.771-6.011 1.438-8.758-.079-.666-2.096-.304-2.452-.206-3.095.848-6.146 2.095-8.465 4.052-4.903-1.862-11.144-2.491-15.973-.66-2.011-1.966-4.716-3.513-7.36-4.698-1.275-.57-3.575-.085-3.991 1.222-.812 2.552-1.136 6.048.177 8.559a1.22 1.22 0 00-.323.373c-3 5.919-4.605 10.649-.934 16.706 2.546 4.199 7.122 7.004 12.464 7.58-1.131 1.854-1.156 4.135-1.042 6.184l.006.08-.16-.018c-.56-.131-1.078-.396-1.568-.654-1.014-.535-1.908-1.248-2.78-1.939-1.619-1.283-3.083-2.705-4.718-3.977-2.307-1.793-5.904-2.32-8.137-.027-.749.768 1.067.811 2.544.504.369.182.705.424 1.037.65.713.49 1.358 1.061 2.005 1.613 1.472 1.256 2.893 2.547 4.48 3.697 2.269 1.646 4.798 2.336 7.433 1.854.12 1.662.159 3.754-.603 4.525l.271-.064c-.509.287-.712.562-.205.691l.138.037c1.066.271 3.113-.148 3.852-.895 1.035-1.049.835-3.223.905-4.512.157-2.916-.706-6.1 1.152-8.732.129-.182-.213-.279-.755-.299.34-.539.126-1.047-1.204-1.119-5.771-.312-9.692-4.064-11.872-8.418-2.373-4.737-.326-8.827 1.897-13.214.032-.063.043-.119.064-.177.579-.322.908-.759.64-1.217-.894-1.523-1.08-3.403-.895-5.216 1.553.927 2.987 2.005 4.113 3.289.859.981 3.748.281 4.254-.766a5.72 5.72 0 00.707-.345c3.089-1.784 10.085.503 12.903 2.015 1.213.651 5.113-.914 4.171-1.42-.008-.004-.018-.008-.025-.013.98-1.241 2.393-2.239 3.955-2.961.363 2.109.947 5.343-.786 6.507-.613.313-1.006.739-.82 1.194 3.665 8.999 3.522 16.769-6.492 21.964-1.438-.574-4.816.666-3.733 1.795 2.33 2.434 1.174 4.906.913 7.707-.075.807.246 2.145.188 3.154-.583.311-.928.721-.689 1.131.684 1.178 2.167 1.172 3.469.682 1.529-.574 1.502-1.598 1.502-2.859.001-3.293 1.361-6.795-.146-9.795a2.72 2.72 0 00.534-.176c4.846-2.33 8.811-5.246 10.74-9.853 1.98-4.722 0-10.294-1.824-14.777z" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow"><img
+              src="https://camo.githubusercontent.com/60561947585c982aee67ed3e3b25388184cc0aa3/687474703a2f2f6d6972726f72732e6372656174697665636f6d6d6f6e732e6f72672f70726573736b69742f627574746f6e732f38387833312f7376672f63632d7a65726f2e737667"
+              alt="CC0" data-canonical-src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg"
+              style="max-width:100%;"></a>
+        </div>
+
+        <a class="nk-slider__back" href="#51">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#53">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="53" class="nk-slide nk-bg--c nk-cover">
+
+        <h1 class="nk-cover__title">Eskerrik <span class="bold">asko</span> ❤</h1>
+
+        <a class="nk-slider__back" href="#52">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#54">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="54" class="nk-slide nk-bg--c calendar">
+
+
+
+        <a class="nk-slider__back" href="#39">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#41">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="55" class="nk-slide nk-bg--c calendar">
+
+
+
+        <a class="nk-slider__back" href="#39">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#41">
+          <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
+        </a>
+      </article>
+      <!----------------------------------->
+      <article id="56" class="nk-slide nk-bg--c calendar">
+
+
+
+        <a class="nk-slider__back" href="#39">
+          <img src="assets/img/arrow.svg" class="arrow-back" alt="Back">
+        </a>
+        <a class="nk-slider__next" href="#41">
           <img src="assets/img/arrow.svg" class="arrow-next" alt="Next">
         </a>
       </article>
@@ -1079,7 +1550,7 @@
       </article>
     </div>
     </article>
-
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
   </main>
 </body>

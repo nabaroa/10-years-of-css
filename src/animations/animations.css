@@ -1,0 +1,154 @@
+@import "bounce.css";
+@import "line.css";
+@import "progress.css";
+@import "opacity.css";
+
+/* Custom triggers for slider  */
+
+.nk-slide:hover .bounce {
+  animation: bounce 2s linear;
+  animation-fill-mode: forwards;
+}
+
+.nk-slide:hover {
+  & .line {
+    width: 0;
+    height: 5px;
+    background: var(--color);
+    animation: line 2s ease-in;
+    animation-fill-mode: forwards;
+  }
+}
+
+.nk-slide:hover {
+  & .translate-y-vertical {
+    animation: translate-y-vertical 5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@keyframes translate-y-vertical {
+  from {
+    transform: translateY(-200vh) rotate(-90deg);
+  }
+
+  to {
+    transform: translateY(100vh) rotate(-90deg);
+  }
+}
+
+.electricity {
+  animation-name: electricity;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes electricity {
+  from,
+  37%,
+  67%,
+  85%,
+  93% {
+    transform: translateY(30px);
+  }
+  4%,
+  64%,
+  88% {
+    transform: translateY(10px);
+  }
+  8%,
+  24%,
+  32%,
+  44% {
+    transform: translateY(5px);
+  }
+  12%,
+  52%,
+  60%,
+  20% {
+    transform: translateY(10px);
+  }
+  16%,
+  40% {
+    transform: translateY(5px);
+  }
+  28%,
+  56% {
+    transform: translateY(10px);
+  }
+  48%,
+  72%,
+  80%,
+  96% {
+    transform: translateY(30px);
+  }
+  76%,
+  to {
+    transform: translateY(40px);
+  }
+}
+
+
+.spin {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.to-color {
+  animation: to-color 3s 2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes to-color {
+  0% {
+    filter: grayscale(1);
+  }
+  50% {
+    filter: grayscale(0.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid var(--color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 1s steps(6, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color);
+  }
+}
+

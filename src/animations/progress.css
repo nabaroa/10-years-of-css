@@ -1,0 +1,25 @@
+.nk-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100vh;
+
+  & .nk-progress__bar {
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    top: 0;
+    background: red;
+    background: linear-gradient(#ff512f, #dd2476);
+    animation: progress 3000s;
+  
+  animation-fill-mode: forwards;
+  }
+}
+
+@keyframes progress {
+  to {
+    width: 100vh;
+  }
+}
