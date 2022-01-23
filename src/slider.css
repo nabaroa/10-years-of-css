@@ -1,7 +1,24 @@
+
 .nk-slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  grid-auto-flow: column;
+  
+  & .nk-slide {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  
+}
+
+
+/* .nk-slider {
   display: flex;
   overflow: hidden;
-}
+}*/
 
 .nk-slide {
   display: flex;
@@ -26,10 +43,9 @@
   width: 90vw;
 }
 
-.nk-slider__back {
+/* .nk-slider__back {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
   width: 50vw;
   height: 100px;
   inset-inline-end: 0;
@@ -88,4 +104,4 @@
 
 .arrow-next {
   transform: rotate(180deg);
-}
+}  */
