@@ -15,8 +15,6 @@
   color: var(--color--k-1);
   overflow: hidden;
 
-  ---color--k-1
-
   &:hover {
     overflow: visible;
     outline: 3px solid var(--color);

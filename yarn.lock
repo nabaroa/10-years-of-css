@@ -2436,10 +2436,10 @@ mute-stdout@^1.0.0:
   resolved "https://registry.yarnpkg.com/mute-stdout/-/mute-stdout-1.0.1.tgz#acb0300eb4de23a7ddeec014e3e96044b3472331"
   integrity sha512-kDcwXR4PS7caBpuRYYBUz9iVixUk3anO3f5OYFiIPwK/20vCzKCHyKoulbiDY1S53zD2bxUpxN/IJ+TnXjfvxg==
 
-nakds@^1.21.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/nakds/-/nakds-1.21.0.tgz#5b3c03e17b5c7accbfb2a37fc772c2389e044777"
-  integrity sha512-NFCv7ok+BLQSjY7CFbNXk9Ztxl6AoON+zDLxYs7pjzROU37/S4w5cXgzyQ2UrKSssbcDwJFQ53rg9rSRNQOBqQ==
+nakds@^1.21.1:
+  version "1.21.1"
+  resolved "https://registry.yarnpkg.com/nakds/-/nakds-1.21.1.tgz#b9ce4f87424d4e1691b1b6bb0e8d7a8f5fcad963"
+  integrity sha512-SKjDshS7Utkp3uPEZjjdk40aObeGL4bwKuBRgrQIU6RewR1N2N28eqLiSMGOY6YDEkbSUvmi5sr34mhVa1yqcQ==
 
 nan@^2.12.1:
   version "2.15.0"
