@@ -722,7 +722,7 @@ a,article,aside,blockquote,body,canvas,caption,code,dd,div,dl,dt,fieldset,figcap
   font-family: monospace, sans-serif;
   position: fixed;
   top: 3%;
-  left: 6%;
+  left: 3%;
   color: #000;
   color: var(--color--k-1);
   overflow: hidden
@@ -911,4 +911,8 @@ a,article,aside,blockquote,body,canvas,caption,code,dd,div,dl,dt,fieldset,figcap
     transition: 1s;
   }.nk-align-self--end {
   align-self: flex-end;
-}
+}.text-primary-dark {
+  color: color-mix(var(--theme-primary), black 10%);
+  }.text-primary-darker {
+  color: color-mix(var(--theme-primary), black 20%);
+  }
