@@ -1,4 +1,3 @@
-- Fix slide IDs
 - Organize the style.css
 - Review in mobile
 - Do a backup and add it to gitignore

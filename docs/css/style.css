@@ -911,8 +911,4 @@ a,article,aside,blockquote,body,canvas,caption,code,dd,div,dl,dt,fieldset,figcap
     transition: 1s;
   }.nk-align-self--end {
   align-self: flex-end;
-}.text-primary-dark {
-  color: color-mix(var(--theme-primary), black 10%);
-  }.text-primary-darker {
-  color: color-mix(var(--theme-primary), black 20%);
-  }
+}
