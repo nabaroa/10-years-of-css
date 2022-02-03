@@ -114,7 +114,7 @@
   color: red;
   width: 80vw;
   left: 10vw;
-  /* display: none; */
+  display: none;
 }
 
 .highlight {

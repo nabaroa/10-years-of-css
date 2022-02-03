@@ -855,7 +855,7 @@ a,article,aside,blockquote,body,canvas,caption,code,dd,div,dl,dt,fieldset,figcap
   color: red;
   width: 80vw;
   left: 10vw;
-  /* display: none; */
+  display: none;
 }.highlight {
   display: inline-block;
   margin-bottom: 0.2em;
