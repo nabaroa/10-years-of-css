@@ -1,9 +1,8 @@
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
 @import "fonts.css";
-@import "slider.css";
 @import "efects.css";
 @import "animations/animations.css";
-@import "show-events.css";
+/* @import "show-events.css"; */
 @import "table.css";
 @import "timer.css";
 
@@ -24,6 +23,61 @@
     }
   }
 }
+
+.fixed {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+}
+
+.cp_embed_wrapper {
+  width: 100vw;
+  height: 90vh;
+  margin-top: auto;
+
+  & iframe {
+    height: 100%;
+  }
+}
+
+.notes {
+  position: absolute;
+  bottom: 2em;
+  color: red;
+  width: 80vw;
+  left: 10vw;
+  display: none;
+}
+
+.highlight {
+  display: inline-block;
+  margin-bottom: 0.2em;
+  padding: 0 var(--spacer);
+  background: var(--color--m);
+  color: var(--color--k-10);
+}
+
+.index {
+  list-style: none;
+  position: fixed;
+  z-index: 3;
+  left: var(--spacer);
+  bottom: var(--spacer);
+  display: flex;
+  & a {
+    text-decoration: none;
+    margin-right: var(--spacer);
+  }
+}
+
+.nk-slide:hover {
+  & .crown {
+    transform: translateY(40px);
+    transition: 1s;
+  }
+}
+
+/* TODO. Migrate to nadDS if appropriate */
 
 .nk-bg-image {
   position: absolute;
@@ -81,56 +135,6 @@
   }
 }
 
-.fixed {
-  position: absolute;
-  top: 25%;
-  left: 0%;
-}
-
-/* .bg-cover:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: white;
-  z-index: 2;
-} */
-
-.cp_embed_wrapper {
-  width: 100vw;
-  height: 90vh;
-  margin-top: auto;
-
-  & iframe {
-    height: 100%;
-  }
-}
-
-.notes {
-  position: absolute;
-  bottom: 2em;
-  color: red;
-  width: 80vw;
-  left: 10vw;
-  display: none;
-}
-
-.highlight {
-  display: inline-block;
-  margin-bottom: 0.2em;
-  padding: 0 var(--spacer);
-  background: var(--color--m);
-  color: var(--color--k-10);
-}
-
-.grid-logos {
-  & img {
-    max-height: 200px;
-  }
-}
-
 .nk-align-items--center {
   align-items: center;
 }
@@ -141,19 +145,6 @@
 
 .nk-justify-items--center {
   justify-items: center;
-}
-
-.index {
-  list-style: none;
-  position: fixed;
-  z-index: 3;
-  left: var(--spacer);
-  bottom: var(--spacer);
-  display: flex;
-  & a {
-    text-decoration: none;
-    margin-right: var(--spacer);
-  }
 }
 
 [class^="nk-absolute"],
@@ -168,33 +159,8 @@
   align-items: center;
 }
 
-.show-edge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 300px;
-
-  & img {
-    display: none;
-  }
-
-  &:hover {
-    & img {
-      display: block;
-    }
-  }
-}
-
 .nk-heading--1 {
   margin-bottom: 0;
-}
-
-.nk-slide:hover {
-  & .crown {
-    transform: translateY(40px);
-    transition: 1s;
-  }
 }
 
 .nk-align-self--end {
