@@ -1,2 +1,0 @@
-- Do a backup and add it to gitignore
-- Remove the notes
