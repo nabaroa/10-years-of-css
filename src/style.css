@@ -12,6 +12,32 @@
 
 /* Specific to this project */
 
+svg,
+img{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.bg-cover {
+    &::before {
+      content: "Horizontal slide 👉";
+      display: block;
+      width: 80vw;
+      margin: var(--spacer) auto;
+      padding: var(--spacer);
+      background: var(--color--k-8);
+      text-align: center;
+      z-index: 3;
+
+      @media (--medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20vw;
+    }
+  }
+}
+
 .button {
   background: none;
   border: 0;
@@ -37,6 +63,18 @@
 
   & iframe {
     height: 100%;
+  }
+
+  @media (--medium--max) {
+    &::before {
+      content: "Switch to desktop view for a better experience in live code 😇";
+      display: block;
+      width: 80vw;
+      margin: var(--spacer) auto;
+      padding: var(--spacer);
+      background: var(--color--k-8);
+      text-align: center;
+    }
   }
 }
 
@@ -116,6 +154,9 @@
   }
 }
 
+.nk-grid-2\@md {
+}
+
 /* Images */
 
 .nk-object-fit--cover {
@@ -165,4 +206,31 @@
 
 .nk-align-self--end {
   align-self: flex-end;
+}
+
+.nk-slide__container {
+  width: 80vw;
+}
+
+@media (--medium) {
+  .nk-grid-2\@md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (--medium) {
+  .nk-grid-6\@md {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.nk-slide__video {
+  object-fit: contain;
+
+  @media (--medium) {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
 }

@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="897" height="526">
 
-    <text transform="matrix(1 0 0 1 4 130.0234)" font-family="'Lato-Black'" font-size="72">Layout</text>
-    <text transform="matrix(1 0 0 1 0 61.4697)" font-family="'Lato-Light'" font-size="72">CSS</text>
+    <text transform="matrix(1 0 0 1 4 130.0234)" font-family="'readex',sans-serif" font-size="72">Layout</text>
+    <text transform="matrix(1 0 0 1 0 61.4697)" font-family="'readex',sans-serif" font-size="72">CSS</text>
     <rect x="225.413" y="480.648" fill="#EB5B8C" width="122.555" height="35.075" />
-    <text transform="matrix(1 0 0 1 250.519 507.6855)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="28.1163">frame</text>
+    <text transform="matrix(1 0 0 1 250.519 507.6855)" fill="#FFFFFF" font-family="'readex',sans-serif" font-size="28.1163">frame</text>
     <rect x="347.346" y="368.988" fill="#EB5B8C" width="122.554" height="35.076" />
-    <text transform="matrix(1 0 0 1 377.4292 396.0254)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="28.1163">table</text>
+    <text transform="matrix(1 0 0 1 377.4292 396.0254)" fill="#FFFFFF" font-family="'readex',sans-serif" font-size="28.1163">table</text>
     <rect x="469.279" y="257.327" fill="#EB5B8C" width="122.555" height="35.076" />
-    <text transform="matrix(1 0 0 1 511.9023 284.3643)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="28.1163">div</text>
+    <text transform="matrix(1 0 0 1 511.9023 284.3643)" fill="#FFFFFF" font-family="'readex',sans-serif" font-size="28.1163">div</text>
     <rect x="591.212" y="145.666" fill="#EB5B8C" width="122.555" height="35.076" />
-    <text transform="matrix(1 0 0 1 607.7705 172.7041)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="28.1163">flexbox</text>
+    <text transform="matrix(1 0 0 1 607.7705 172.7041)" fill="#FFFFFF" font-family="'readex',sans-serif" font-size="28.1163">flexbox</text>
     <rect x="713.146" y="34.005" fill="#EB5B8C" width="122.555" height="35.076" />
-    <text transform="matrix(1 0 0 1 750.1162 61.0361)" fill="#FFFFFF" font-family="'Lato-Regular'" font-size="28.1163">grid</text>
+    <text transform="matrix(1 0 0 1 750.1162 61.0361)" fill="#FFFFFF" font-family="'readex',sans-serif" font-size="28.1163">grid</text>
     <path fill="#C6C6C6" d="M295.968,453.812c-2.904-17.886-11.468-34.65-11.957-52.935c-0.444-16.587,8.837-30.743,21.158-41.008
 	c11.213-9.342,25.205-15.626,39.422-18.668c7.729-1.653,16.086-1.823,23.871-0.481c3.888,0.671,7.602,2.058,11.058,3.938
 	c1.895,1.032,3.611,2.362,5.24,3.766c0.952,0.854,1.846,1.766,2.682,2.733c0.506,0.637,1.013,1.271,1.52,1.909
@@ -52,6 +52,6 @@
 	c0.662-4.998,1.637-10.254,4.802-14.336c1.71-2.206-1.799-5.765-3.498-3.572c-3.688,4.758-5.085,10.453-5.863,16.331
 	c1.404-0.059,2.811-0.118,4.217-0.177c-3.316-5.8-7.237-11.741-14.678-11.331C592.793,126.678,594.628,131.251,597.295,131.104
 	L597.295,131.104z" />
-    <text transform="matrix(1 0 0 1 599.8887 279.3105)" fill="#B2B2B2" font-family="'Lato-Regular'" font-size="18">float/display</text>
-    <text transform="matrix(1 0 0 1 644.8887 208.3105)" fill="#B2B2B2" font-family="'Lato-Regular'" font-size="18">for small components</text>
+    <text transform="matrix(1 0 0 1 599.8887 279.3105)" fill="#B2B2B2" font-family="'readex',sans-serif" font-size="18">float/display</text>
+    <text transform="matrix(1 0 0 1 644.8887 208.3105)" fill="#B2B2B2" font-family="'readex',sans-serif" font-size="18">for small components</text>
 </svg>

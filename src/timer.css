@@ -10,10 +10,17 @@
 .counter {
   font-family: monospace, sans-serif;
   position: fixed;
-  top: 3%;
-  left: 3%;
+  bottom: 0;
+  right: 3%;
   color: var(--color--k-1);
   overflow: hidden;
+
+@media (--medium) {
+  bottom: initial;
+  right: initial;
+  top: 3%;
+  left: 3%;
+  }
 
   &:hover {
     overflow: visible;
