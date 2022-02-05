@@ -159,6 +159,15 @@ img {
   object-fit: cover;
 }
 
+@media (--medium) {
+  .nk-object-fit--cover\@md {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
 .nk-cover__title {
   line-height: 1;
 }
@@ -199,18 +208,6 @@ img {
 
 .nk-slide__container {
   width: 80vw;
-}
-
-@media (--medium) {
-  .nk-grid-2\@md {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (--medium) {
-  .nk-grid-6\@md {
-    grid-template-columns: repeat(6, 1fr);
-  }
 }
 
 .nk-grid-row-3 {
