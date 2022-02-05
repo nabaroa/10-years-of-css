@@ -142,19 +142,12 @@ img {
   }
 }
 
-.nk-heading--1 {
-  margin-bottom: var(--xxxx-large);
-}
-
 /* grid */
 
 .nk-grid-2 {
   & img {
     width: 50vw;
   }
-}
-
-.nk-grid-2\@md {
 }
 
 /* Images */
@@ -200,10 +193,6 @@ img {
   align-items: center;
 }
 
-.nk-heading--1 {
-  margin-bottom: 0;
-}
-
 .nk-align-self--end {
   align-self: flex-end;
 }
@@ -221,6 +210,15 @@ img {
 @media (--medium) {
   .nk-grid-6\@md {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.nk-grid-row-3 {
+  grid-template-rows: repeat(3, 1fr);
+  max-height: 100%;
+
+  & img {
+    max-height: 100%;
   }
 }
 
