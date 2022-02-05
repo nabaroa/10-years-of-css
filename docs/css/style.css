@@ -711,27 +711,27 @@ a,article,aside,blockquote,body,canvas,caption,code,dd,div,dl,dt,fieldset,figcap
 }:root {
   --color: #e84d7a;
 }/* Specific to this project */svg,
-img{
+img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }.bg-cover::before {
-      content: "Horizontal slide 👉";
-      display: block;
-      width: 80vw;
-      margin: 0.5em auto;
-      margin: var(--spacer) auto;
-      padding: 0.5em;
-      padding: var(--spacer);
-      background: #eee;
-      background: var(--color--k-8);
-      text-align: center;
-      z-index: 3
+    content: "Horizontal slide 👉";
+    display: block;
+    width: 80vw;
+    margin: 0.5em auto;
+    margin: var(--spacer) auto;
+    padding: 0.5em;
+    padding: var(--spacer);
+    background: #eee;
+    background: var(--color--k-8);
+    text-align: center;
+    z-index: 3
   }@media (min-width: 800px) {.bg-cover::before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20vw
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20vw
   }
     }.button {
   background: none;

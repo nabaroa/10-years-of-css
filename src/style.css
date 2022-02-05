@@ -13,27 +13,27 @@
 /* Specific to this project */
 
 svg,
-img{
+img {
   max-width: 100%;
   object-fit: contain;
 }
 
 .bg-cover {
-    &::before {
-      content: "Horizontal slide 👉";
-      display: block;
-      width: 80vw;
-      margin: var(--spacer) auto;
-      padding: var(--spacer);
-      background: var(--color--k-8);
-      text-align: center;
-      z-index: 3;
+  &::before {
+    content: "Horizontal slide 👉";
+    display: block;
+    width: 80vw;
+    margin: var(--spacer) auto;
+    padding: var(--spacer);
+    background: var(--color--k-8);
+    text-align: center;
+    z-index: 3;
 
-      @media (--medium) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20vw;
+    @media (--medium) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20vw;
     }
   }
 }
